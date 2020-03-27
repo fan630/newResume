@@ -1,0 +1,13 @@
+.portfolioCard{
+    overflow:hidden;
+    &--active{
+        transform:scale(1,1);transition: all 0.5s ease-out;
+        border: 1px dotted#ccc;
+        &:hover{
+            transform:scale(1.1,1.1);
+        }
+    }
+    &--link{
+        padding-left: 2rem;
+    }
+}

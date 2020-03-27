@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../stylesheets/utils/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// components
+@import "./components/portfolio-card";
+@import "./components/switches";
+
+// utils
+@import "./utils/helpers";
