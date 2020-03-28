@@ -18,59 +18,49 @@
     >
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css'/>
     <link rel="stylesheet" href="./css/all.css">
-
+    <link
+        href="static/stylesheets/bootstrap-switch.css"
+    />
     <title>newResume</title>
 </head>
 
 <body>
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-    ></script>
-    <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"
-    ></script>
-</body>
     <!-- switch開關 -->
-    <div class="custom-control custom-switch position-absolute">
+    <div
+        class="make-switch custom-control custom-switch"
+        id="mySwitch"
+    >
         <input
             type="checkbox"
             class="custom-control-input"
             id="customSwitch1"
         >
         <label
-            class="custom-control-label"
+            class="custom-control-label sticky-top"
             for="customSwitch1"
         ></label>
     </div>
     <div class="container position-relative mt-2">
-        <div class="row d-flex justify-content-center">
-            <div class="col-10">
-                <div class="card position-relative">
-                    <div class="card-header h4">
-                        About Me
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            我的名字是吳若凡, 畢業於淡江大學國企系, 之前從事科技業的產品管理, 也有在國營事業擔任訪銷員, 會接觸前端是因為覺得在現有的產業上得不太到更好的發展, 所以想嘗試不同的領域, 另外也很想要有自己的作品,
-                            喜歡自己動手把作品做出.
-                            強大的成就感驅使我更想往這領域發展.在學習的過程中透過
-                            <a
-                                href="https://hackmd.io/@4S7Z3PBFSCywTJcufIfm-Q"
-                                target="_blank"
-                            >HackMD</a>
-                            撰寫了課程心得, 解題分析約20餘篇資訊, 底下是我的作品和曾經的工作經驗, 若是有興趣跟我聯繫,
-                            也可以透過左下角的聯繫資訊連繫我喔.
-                        </p>
-                        <!-- <div class="card__info d-flex">
+    <div class="row d-flex justify-content-center">
+        <div class="col-10">
+            <div class="card position-relative">
+                <div class="card-header h4">
+                    About Me
+                </div>
+                <div class="card-body">
+                    <p>
+                        我的名字是吳若凡, 畢業於淡江大學國企系, 之前從事科技業的產品管理, 也有在國營事業擔任訪銷員, 會接觸前端是因為覺得在現有的產業上得不太到更好的發展, 所以想嘗試不同的領域,
+                        另外也很想要有自己的作品,
+                        喜歡自己動手把作品做出.
+                        強大的成就感驅使我更想往這領域發展.在學習的過程中透過
+                        <a
+                            href="https://hackmd.io/@4S7Z3PBFSCywTJcufIfm-Q"
+                            target="_blank"
+                        >HackMD</a>
+                        撰寫了課程心得, 解題分析約20餘篇資訊, 底下是我的作品和曾經的工作經驗, 若是有興趣跟我聯繫,
+                        也可以透過左下角的聯繫資訊連繫我喔.
+                    </p>
+                    <!-- <div class="card__info d-flex">
                             <div class="info__email">
                                 <a href="mailTo:norriswu266@gmail.com">
                                     <i class="far fa-envelope"></i>
@@ -82,389 +72,81 @@
                                 </a>
                             </div>
                         </div> -->
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- React -->
-        <div class="row d-flex justify-content-center my-3">
-            <div class="col-10">
-                <div
-                    class="card"
-                >
-                    <div class="card-header">
-                        <h5 class="mb-0">React Blog
-                            <i class="icon fab fa-react fa-lg"></i>
-                        </h5>
-                    </div>
-                    <div class="row no-gutters d-flex align-items-center">
-                        <div class="col-md-5 portfolioCard px-2 py-2">
-                            <img
-                                src="./images/blog.png"
-                                class="card-img img-fluid portfolioCard--active"
-                            >
-                            <button
-                                class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseExample"
-                                aria-expanded="false"
-                                aria-controls="collapseExample"
-                            >
-                                <label class="ui-checked-display">
-                                    <input
-                                        type="checkbox"
-                                        class="ui-checkbox"
-                                    >
-                                    <i class="fas fa-caret-down ui-show"></i>
-                                    <i class="fas fa-sort-up ui-hidden"></i>
-                                </label>
-                            </button>
-                        </div>
-                        <div class="col-md-7 collapse js-show show" id="collapseExample">
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">使用React Library</li>
-                                    <li class="list-group-item">實作CRUD, 並支援markdown</li>
-                                    <li class="list-group-item">實作React Router</li>
-                                    <li class="list-group-item">API 透過Redux promise dispatch</li>
-                                </ul>
-                                <div class="d-flex justify-content-center justify-content-md-end mt-2">
-                                    <div
-                                        class="btn-group btn-group-toggle btn-block d-md-none"
-                                        data-toggle="buttons"
-                                    >
-                                        <a
-                                            href="https://fan630.github.io/Blog_Redux_promise/#/"
-                                            target="_blank"
-                                            class="btn btn-secondary"
-                                        ><i class="icon fas fa-link md">Link</i></a>
-                                        <a
-                                            href="https://github.com/fan630/Blog_Redux_promise"
-                                            target="_blank"
-                                            class="btn btn-primary"
-                                        ><i class="icon fab fa-github fa-md">Demo</i></a>
-                                    </div>
-                                    <div class="d-none d-md-block">
-                                        <a
-                                            href="https://fan630.github.io/Blog_Redux_promise/#/"
-                                            target="_blank"
-                                            class="btn btn-secondary"
-                                        ><i class="icon fas fa-link md">Link</i></a>
-                                        <a
-                                            href="https://github.com/fan630/Blog_Redux_promise"
-                                            target="_blank"
-                                            class="btn btn-primary ml-2"
-                                        ><i class="icon fab fa-github fa-md">Demo</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+    <!-- React -->
+    <div class="row d-flex justify-content-center my-3">
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">React Blog
+                        <i class="icon fab fa-react fa-lg"></i>
+                    </h5>
                 </div>
-            </div>
-        </div>
-        <!-- PHP -->
-        <div class="row d-flex justify-content-center my-3">
-            <div class="col-10">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">Todolist
-                            <i class="icon fab fa-js fa-lg"></i>
-                            <i class="fab fa-php fa-lg ml-1"></i>
-                        </h5>
-                    </div>
-                    <div class="row no-gutters d-flex align-items-center">
-                        <div class="col-md-5 px-2 py-2 order-md-1 portfolioCard">
-                            <img
-                                src="./images/todolist.png"
-                                class="card-img img-fluid portfolioCard--active"
-                            >
-                            <button
-                                class="btn btn-outline-primary mt-2 btn-block d-block d-md-none js-btn"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseExample2"
-                                aria-expanded="false"
-                                aria-controls="collapseExample"
-                            >  
-                                <label
-                                    class="ui-checked-display"
-                                >
-                                    <input
-                                        type="checkbox"
-                                        class="ui-checkbox"
-                                    >
-                                    <i class="fas fa-caret-down ui-show"></i>
-                                    <i class="fas fa-sort-up ui-hidden"></i>
-                                </label>
-                            </button>
-                        </div>
-                        <div
-                            class="col-md-7 collapse js-show show order-md-0"
-                            id="collapseExample2"
+                <div class="row no-gutters d-flex align-items-center">
+                    <div class="col-md-5 portfolioCard px-2 py-2">
+                        <img
+                            src="./images/blog.png"
+                            class="card-img img-fluid portfolioCard--active"
                         >
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">實作不會換頁的Todolist</li>
-                                    <li class="list-group-item">資料儲存在後端資料庫,Ajax/JSON 設計 SPA 架構</li>
-                                    <li class="list-group-item">部署在自己租用的主機(Digital Ocean)</li>
-                                    <li class="list-group-item">
-                                        <a
-                                            href="http://fan630.com.tw/todo/api-document/API_Document.html"
-                                            target="_blank"
-                                        >API文件<a>
-                                    </li>
-                                </ul>
-                                <div class="d-flex justify-content-center justify-content-md-start mt-2">
-                                    <div
-                                        class="btn-group btn-group-toggle btn-block d-md-none"
-                                        data-toggle="buttons"
-                                    >
-                                        <a
-                                            href="http://fan630.com.tw/todo/index.html"
-                                            target="_blank"
-                                            class="btn btn-secondary"
-                                        ><i class="icon fas fa-link md">Link</i></a>
-                                        <a
-                                            href="https://github.com/fan630/SPA_Todolist"
-                                            target="_blank"
-                                            class="btn btn-primary"
-                                        ><i class="icon fab fa-github fa-md">Demo</i></a>
-                                    </div>
-                                    <div class="d-none d-md-block">
-                                        <a
-                                            href="http://fan630.com.tw/todo/index.html"
-                                            target="_blank"
-                                            class="btn btn-secondary"
-                                        ><i class="icon fas fa-link md">Link</i></a>
-                                        <a
-                                            href="https://github.com/fan630/SPA_Todolist"
-                                            target="_blank"
-                                            class="btn btn-primary ml-2"
-                                        ><i class="icon fab fa-github fa-md">Demo</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- News -->
-        <div class="row d-flex justify-content-center my-3">
-            <div class="col-10">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">News
-                            <i class="icon fab fa-js fa-lg"></i>
-                        </h5>
-                    </div>
-                    <div class="row no-gutters d-flex align-items-center">
-                        <div class="col-md-5 portfolioCard px-2 py-2">
-                            <img
-                                src="./images/news.png"
-                                class="card-img img-fluid portfolioCard--active"
-                            >
-                            <button
-                                class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#collapseExample3"
-                                aria-expanded="false"
-                                aria-controls="collapseExample"
-                            >
-                                <label class="ui-checked-display">
-                                    <input
-                                        type="checkbox"
-                                        class="ui-checkbox"
-                                    >
-                                    <i class="fas fa-caret-down ui-show"></i>
-                                    <i class="fas fa-sort-up ui-hidden"></i>
-                                </label>
-                            </button>
-                        </div>
-                        <div
-                            class="col-md-7 collapse js-show show"
-                            id="collapseExample3"
+                        <button
+                            class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseExample"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
                         >
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">實作SPA</li>
-                                    <li class="list-group-item">資料從API獲取, 依獲取的資料做變更</li>
-                                    <li class="list-group-item">圖片placeholder,用以提升UI/UX</li>
-                                    <li class="list-group-item">實作搜尋功能</li>
-                                </ul>
-                                <div class="d-flex justify-content-center justify-content-md-end mt-2">
-                                    <div
-                                        class="btn-group btn-group-toggle btn-block d-md-none"
-                                        data-toggle="buttons"
-                                    >
-                                        <a
-                                            href="https://fan630.github.io/news/"
-                                            target="_blank"
-                                            class="btn btn-secondary"
-                                        ><i class="icon fas fa-link md">Link</i></a>
-                                        <a
-                                            href="https://github.com/fan630/news"
-                                            target="_blank"
-                                            class="btn btn-primary"
-                                        ><i class="icon fab fa-github fa-md">Demo</i></a>
-                                    </div>
-                                    <div class="d-none d-md-block">
-                                        <a
-                                            href="https://fan630.github.io/news/"
-                                            target="_blank"
-                                            class="btn btn-secondary"
-                                        ><i class="icon fas fa-link md">Link</i></a>
-                                        <a
-                                            href="https://github.com/fan630/news"
-                                            target="_blank"
-                                            class="btn btn-primary ml-2"
-                                        ><i class="icon fab fa-github fa-md">Demo</i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <label class="ui-check-display">
+                                <input
+                                    type="checkbox"
+                                    class="ui-checkbox"
+                                >
+                                <i class="fas fa-caret-down ui-show"></i>
+                                <i class="fas fa-sort-up ui-hidden"></i>
+                            </label>
+                        </button>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- 工作經驗 -->
-        <div class="row d-flex justify-content-center my-3">
-            <div class="col-10">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">Work Experience
-                            <i class="fas fa-user fa-lg"></i>
-                        </h5>
-                    </div>
-                    <div class="card-body">
-                        <div
-                            class="accordion"
-                            id="accordionExample"
-                        >
-                                <div class="d-flex align-items-center">
-                                    <div class="h2 mb-0">
-                                        <button
-                                            class="btn btn-link"
-                                            type="button"
-                                            data-toggle="collapse"
-                                            data-target="#collapseOne"
-                                            aria-expanded="true"
-                                            aria-controls="collapseOne"
-                                        >
-                                            Lidemy Program
-                                        </button>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <i class="fas fa-arrow-alt-circle-left"></i>
-                                    </div>
-                                </div>
-
-                                
+                    <div
+                        class="col-md-7 collapse js-show show"
+                        id="collapseExample"
+                    >
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">使用React Library</li>
+                                <li class="list-group-item">實作CRUD, 並支援markdown</li>
+                                <li class="list-group-item">實作React Router</li>
+                                <li class="list-group-item">API 透過Redux promise dispatch</li>
+                            </ul>
+                            <div class="d-flex justify-content-center justify-content-md-end mt-2">
                                 <div
-                                    id="collapseOne"
-                                    class="collapse"
-                                    aria-labelledby="headingOne"
-                                    data-parent="#accordionExample"
+                                    class="btn-group btn-group-toggle btn-block d-md-none"
+                                    data-toggle="buttons"
                                 >
-                                    <div class="card-body">
-                                        <div class="d-flex mb-2">
-                                            <strong>2019/04~Now</strong>
-                                            <div class="ml-auto">第三期學生</div>
-                                        </div>
-                                        <ul>
-                                            <li>培養邏輯思維和自行尋找答案的能力</li>
-                                            <li>前端教學:HTML/CSS/jQuery/JavaScript/React/Redux</li>
-                                            <li>後端&資料庫:PHP/MYSQL</li>
-                                            <li>工具教學:Gulp/Webpack/Git/SASS</li>
-                                            <li>網路相關:http基礎知識/串接API</li>
-                                            <li>
-                                                <a
-                                                    href="https://github.com/Lidemy/mentor-program-3rd-fan630"
-                                                    target="_blank"
-                                                >相關的學習狀況<a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <a
+                                        href="https://fan630.github.io/Blog_Redux_promise/#/"
+                                        target="_blank"
+                                        class="btn btn-secondary"
+                                    ><i class="icon fas fa-link md">Link</i></a>
+                                    <a
+                                        href="https://github.com/fan630/Blog_Redux_promise"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
-
-                            <div class="card">
-                                <div
-                                    class="card-header"
-                                    id="headingTwo"
-                                >
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link collapsed"
-                                            type="button"
-                                            data-toggle="collapse"
-                                            data-target="#collapseTwo"
-                                            aria-expanded="false"
-                                            aria-controls="collapseTwo"
-                                        >
-                                            台灣菸酒公司
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div
-                                    id="collapseTwo"
-                                    class="collapse"
-                                    aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample"
-                                >
-                                    <div class="card-body">
-                                        <div class="d-flex mb-2">
-                                            <strong>2019/04~2019/11</strong>
-                                            <div class="ml-auto">訪銷員</div>
-                                        </div>
-                                        <ul>
-                                            <li>18天訂單預測</li>
-                                            <li>發季度獎金, 發放陳列品項</li>
-                                            <li>查核傳統通路店家是否達到陳列標準</li>
-                                            <li>商情搜集</li>
-                                            <li>各式活動支援(例如: 爽啤活動, 查核鋪戶商店點)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div
-                                    class="card-header"
-                                    id="headingThree"
-                                >
-                                    <h2 class="mb-0">
-                                        <button
-                                            class="btn btn-link collapsed"
-                                            type="button"
-                                            data-toggle="collapse"
-                                            data-target="#collapseThree"
-                                            aria-expanded="false"
-                                            aria-controls="collapseThree"
-                                        >
-                                            緯創資通
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div
-                                    id="collapseThree"
-                                    class="collapse"
-                                    aria-labelledby="headingThree"
-                                    data-parent="#accordionExample"
-                                >
-                                    <div class="card-body">
-                                        <div class="d-flex mb-2">
-                                            <strong>2015/08~2019/04</strong>
-                                            <div class="ml-auto">產品管理</div>
-                                        </div>
-                                        <ul>
-                                            <li>協調各個部門在時程上掌握進度</li>
-                                            <li>執行開發階段各項會議策劃、召集、記錄及進度跟催等工作</li>
-                                            <li>專案敏感度,危機處理能力</li>
-                                            <li>工廠端協調, 以準時達交為目的</li>
-                                            <li>把複雜的的資訊整合並簡單化,給予客戶合理lead time, 得以和客戶做零差別的溝通。</li>
-                                        </ul>
+                                <div class="d-none d-md-block">
+                                    <a
+                                        href="https://fan630.github.io/Blog_Redux_promise/#/"
+                                        target="_blank"
+                                        class="btn btn-secondary"
+                                    ><i class="icon fas fa-link md">Link</i></a>
+                                    <a
+                                        href="https://github.com/fan630/Blog_Redux_promise"
+                                        target="_blank"
+                                        class="btn btn-primary ml-2"
+                                    ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                             </div>
                         </div>
@@ -473,5 +155,324 @@
             </div>
         </div>
     </div>
+    <!-- PHP -->
+    <div class="row d-flex justify-content-center my-3">
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Todolist
+                        <i class="icon fab fa-js fa-lg"></i>
+                        <i class="fab fa-php fa-lg ml-1"></i>
+                    </h5>
+                </div>
+                <div class="row no-gutters d-flex align-items-center">
+                    <div class="col-md-5 px-2 py-2 order-md-1 portfolioCard">
+                        <img
+                            src="./images/todolist.png"
+                            class="card-img img-fluid portfolioCard--active"
+                        >
+                        <button
+                            class="btn btn-accent mt-2 btn-block d-block d-md-none js-btn"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseExample2"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                        >
+                            <label class="ui-check-display">
+                                <input
+                                    type="checkbox"
+                                    class="ui-checkbox"
+                                >
+                                <i class="fas fa-caret-down ui-show"></i>
+                                <i class="fas fa-sort-up ui-hidden"></i>
+                            </label>
+                        </button>
+                    </div>
+                    <div
+                        class="col-md-7 collapse js-show show order-md-0"
+                        id="collapseExample2"
+                    >
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">實作不會換頁的Todolist</li>
+                                <li class="list-group-item">資料儲存在後端資料庫,Ajax/JSON 設計 SPA 架構</li>
+                                <li class="list-group-item">部署在自己租用的主機(Digital Ocean)</li>
+                                <li class="list-group-item">
+                                    <a
+                                        href="http://fan630.com.tw/todo/api-document/API_Document.html"
+                                        target="_blank"
+                                    >API文件<a>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center justify-content-md-start mt-2">
+                                <div
+                                    class="btn-group btn-group-toggle btn-block d-md-none"
+                                    data-toggle="buttons"
+                                >
+                                    <a
+                                        href="http://fan630.com.tw/todo/index.html"
+                                        target="_blank"
+                                        class="btn btn-secondary"
+                                    ><i class="icon fas fa-link md">Link</i></a>
+                                    <a
+                                        href="https://github.com/fan630/SPA_Todolist"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    ><i class="icon fab fa-github fa-md">Demo</i></a>
+                                </div>
+                                <div class="d-none d-md-block">
+                                    <a
+                                        href="http://fan630.com.tw/todo/index.html"
+                                        target="_blank"
+                                        class="btn btn-secondary"
+                                    ><i class="icon fas fa-link md">Link</i></a>
+                                    <a
+                                        href="https://github.com/fan630/SPA_Todolist"
+                                        target="_blank"
+                                        class="btn btn-primary ml-2"
+                                    ><i class="icon fab fa-github fa-md">Demo</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News -->
+    <div class="row d-flex justify-content-center my-3">
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">News
+                        <i class="icon fab fa-js fa-lg"></i>
+                    </h5>
+                </div>
+                <div class="row no-gutters d-flex align-items-center">
+                    <div class="col-md-5 portfolioCard px-2 py-2">
+                        <img
+                            src="./images/news.png"
+                            class="card-img img-fluid portfolioCard--active"
+                        >
+                        <button
+                            class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseExample3"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                        >
+                            <label class="ui-check-display">
+                                <input
+                                    type="checkbox"
+                                    class="ui-checkbox"
+                                >
+                                <i class="fas fa-caret-down ui-show"></i>
+                                <i class="fas fa-sort-up ui-hidden"></i>
+                            </label>
+                        </button>
+                    </div>
+                    <div
+                        class="col-md-7 collapse js-show show"
+                        id="collapseExample3"
+                    >
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">實作SPA</li>
+                                <li class="list-group-item">資料從API獲取, 依獲取的資料做變更</li>
+                                <li class="list-group-item">圖片placeholder,用以提升UI/UX</li>
+                                <li class="list-group-item">實作搜尋功能</li>
+                            </ul>
+                            <div class="d-flex justify-content-center justify-content-md-end mt-2">
+                                <div
+                                    class="btn-group btn-group-toggle btn-block d-md-none"
+                                    data-toggle="buttons"
+                                >
+                                    <a
+                                        href="https://fan630.github.io/news/"
+                                        target="_blank"
+                                        class="btn btn-secondary"
+                                    ><i class="icon fas fa-link md">Link</i></a>
+                                    <a
+                                        href="https://github.com/fan630/news"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    ><i class="icon fab fa-github fa-md">Demo</i></a>
+                                </div>
+                                <div class="d-none d-md-block">
+                                    <a
+                                        href="https://fan630.github.io/news/"
+                                        target="_blank"
+                                        class="btn btn-secondary"
+                                    ><i class="icon fas fa-link md">Link</i></a>
+                                    <a
+                                        href="https://github.com/fan630/news"
+                                        target="_blank"
+                                        class="btn btn-primary ml-2"
+                                    ><i class="icon fab fa-github fa-md">Demo</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 工作經驗 -->
+    <div class="row d-flex justify-content-center my-3">
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Work Experience
+                        <i class="fas fa-user fa-lg"></i>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div
+                        class="accordion"
+                        id="accordionExample"
+                    >
+                        <div class="d-flex align-items-center">
+                            <div class="h2 mb-0">
+                                <button
+                                    class="btn btn-link"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    Lidemy Program
+                                </button>
+                            </div>
+                            <div class="ml-auto">
+                                <i class="fas fa-arrow-alt-circle-left"></i>
+                            </div>
+                        </div>
+
+
+                        <div
+                            id="collapseOne"
+                            class="collapse"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+                                <div class="d-flex mb-2">
+                                    <strong>2019/04~Now</strong>
+                                    <div class="ml-auto">第三期學生</div>
+                                </div>
+                                <ul>
+                                    <li>培養邏輯思維和自行尋找答案的能力</li>
+                                    <li>前端教學:HTML/CSS/jQuery/JavaScript/React/Redux</li>
+                                    <li>後端&資料庫:PHP/MYSQL</li>
+                                    <li>工具教學:Gulp/Webpack/Git/SASS</li>
+                                    <li>網路相關:http基礎知識/串接API</li>
+                                    <li>
+                                        <a
+                                            href="https://github.com/Lidemy/mentor-program-3rd-fan630"
+                                            target="_blank"
+                                        >相關的學習狀況<a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div
+                                class="card-header"
+                                id="headingTwo"
+                            >
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        台灣菸酒公司
+                                    </button>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body">
+                                    <div class="d-flex mb-2">
+                                        <strong>2019/04~2019/11</strong>
+                                        <div class="ml-auto">訪銷員</div>
+                                    </div>
+                                    <ul>
+                                        <li>18天訂單預測</li>
+                                        <li>發季度獎金, 發放陳列品項</li>
+                                        <li>查核傳統通路店家是否達到陳列標準</li>
+                                        <li>商情搜集</li>
+                                        <li>各式活動支援(例如: 爽啤活動, 查核鋪戶商店點)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                                class="card-header"
+                                id="headingThree"
+                            >
+                                <h2 class="mb-0">
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        緯創資通
+                                    </button>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseThree"
+                                class="collapse"
+                                aria-labelledby="headingThree"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body">
+                                    <div class="d-flex mb-2">
+                                        <strong>2015/08~2019/04</strong>
+                                        <div class="ml-auto">產品管理</div>
+                                    </div>
+                                    <ul>
+                                        <li>協調各個部門在時程上掌握進度</li>
+                                        <li>執行開發階段各項會議策劃、召集、記錄及進度跟催等工作</li>
+                                        <li>專案敏感度,危機處理能力</li>
+                                        <li>工廠端協調, 以準時達交為目的</li>
+                                        <li>把複雜的的資訊整合並簡單化,給予客戶合理lead time, 得以和客戶做零差別的溝通。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+    ></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+    ></script>
     <script src="./all.js"></script>
+</body>
 </html>

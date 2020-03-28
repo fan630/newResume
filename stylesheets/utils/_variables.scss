@@ -66,8 +66,8 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       #113285;//$blue !default;
-$secondary:     #373C38;//$gray-600 !default;
+$primary:       #3F5D45;//#113285;//$blue !default;
+$secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -80,6 +80,7 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary":    $primary,
+    "accent":     #FFE180,
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
@@ -90,6 +91,10 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+//light theme color
+$primary-200: #EAF0ED;
+$primary-500: #8DA291;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
@@ -176,7 +181,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("info");//theme-color("primary") !default;
+$link-color:                              theme-color("primary");//theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        lighten($link-color, 15%) !default;
 $link-hover-decoration:                   none;//underline !default;
@@ -280,7 +285,7 @@ $embed-responsive-aspect-ratios: join(
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-sans-serif !default;
+$font-family-base:            'justfont',$font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
@@ -834,7 +839,7 @@ $card-border-width:                 $border-width !default;
 $card-border-radius:                0;//$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       $primary-200;//rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
