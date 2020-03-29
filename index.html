@@ -26,7 +26,24 @@
 
 <body>
     <!-- switch開關 -->
-    <div
+    <div class="switches custom-switch">
+        <div class="onoffswitch">
+            <input
+                type="checkbox"
+                name="onoffswitch"
+                class="onoffswitch-checkbox"
+                id="myonoffswitch"
+            >
+            <label
+                class="onoffswitch-label sticky-top"
+                for="myonoffswitch"
+            >
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+    <!-- <div
         class="make-switch custom-control custom-switch"
         id="mySwitch"
     >
@@ -39,13 +56,13 @@
             class="custom-control-label sticky-top"
             for="customSwitch1"
         ></label>
-    </div>
+    </div> -->
     <div class="container position-relative mt-2">
     <div class="row d-flex justify-content-center">
         <div class="col-10">
             <div class="card position-relative">
-                <div class="card-header h4">
-                    About Me
+                <div class="card-header">
+                    <h5 class="mb-0">About Me</h5>
                 </div>
                 <div class="card-body">
                     <p>
@@ -89,10 +106,10 @@
                     <div class="col-md-5 portfolioCard px-2 py-2">
                         <img
                             src="./images/blog.png"
-                            class="card-img img-fluid portfolioCard--active"
+                            class="card-img img-fluid portfolioCard--active img-thumbnail"
                         >
                         <button
-                            class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"
+                            class="btn btn-primary-light mt-2 btn-block d-block d-md-none js-btn"
                             type="button"
                             data-toggle="collapse"
                             data-target="#collapseExample"
@@ -128,12 +145,12 @@
                                     <a
                                         href="https://fan630.github.io/Blog_Redux_promise/#/"
                                         target="_blank"
-                                        class="btn btn-secondary"
+                                        class="btn btn-light"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/Blog_Redux_promise"
                                         target="_blank"
-                                        class="btn btn-primary"
+                                        class="btn btn-primary-light"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                                 <div class="d-none d-md-block">
@@ -169,7 +186,7 @@
                     <div class="col-md-5 px-2 py-2 order-md-1 portfolioCard">
                         <img
                             src="./images/todolist.png"
-                            class="card-img img-fluid portfolioCard--active"
+                            class="card-img img-fluid portfolioCard--active img-thumbnail"
                         >
                         <button
                             class="btn btn-accent mt-2 btn-block d-block d-md-none js-btn"
@@ -253,7 +270,7 @@
                     <div class="col-md-5 portfolioCard px-2 py-2">
                         <img
                             src="./images/news.png"
-                            class="card-img img-fluid portfolioCard--active"
+                            class="card-img img-fluid portfolioCard--active img-thumbnail"
                         >
                         <button
                             class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"

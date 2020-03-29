@@ -26,3 +26,20 @@ html{
 .card-header{
   color:$primary;
 }
+
+// background
+.bg-primary{
+  background-color: $primary;
+}
+
+.bg-primary-light{
+  background-color: $primary-200;
+}
+
+.bg-dark{
+  background-color: black;
+}
+// text
+.text-primary-light{
+  color:$primary-200;
+}
