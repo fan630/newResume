@@ -6,15 +6,16 @@ $(document).ready(function () {
         }
     }); 
 
-    $('.switches').change('click', () => {
+    $('.onoffswitch').change('click', () => {
         $("body").toggleClass("bg-dark")
         $(".card-header").toggleClass("bg-primary")
         $(".card-header > h5").toggleClass("text-primary-light")
-        $(".js-btn").removeClass("btn-primary-light")
-        $(".js-btn").addClass("bg-primary")
-        // $(".section  p").toggleClass("text_white")
-        // $(".section  ul").toggleClass("text_white")
-        // $(".section  a").toggleClass("text_blue")
+        $(".js-btn").toggleClass("btn-primary-light")
+        $(".js-btn").toggleClass("bg-primary")
+        $(".js-btn-link").toggleClass("btn-light")
+        $(".js-btn-link").toggleClass("btn-secondary")
+        $(".js-btn-demo").toggleClass("btn-primary-light")
+        $(".js-btn-demo").toggleClass("btn-primary")
     })
 });
 

@@ -162,7 +162,7 @@ a {
 }
 
 a:hover {
-  color: #5e8b67;
+  color: #87ae8f;
   text-decoration: none;
 }
 
@@ -3642,7 +3642,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #5e8b67;
+  color: #87ae8f;
   text-decoration: none;
 }
 
@@ -5673,7 +5673,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #5e8b67;
+  color: #87ae8f;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -11334,15 +11334,11 @@ a.text-accent:hover, a.text-accent:focus {
   padding-left: 2rem;
 }
 
-.custom-switch {
+.onoffswitch {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 0px;
   height: 100%;
-}
-
-.onoffswitch {
-  position: relative;
   width: 55px;
 }
 
@@ -11390,7 +11386,7 @@ a.text-accent:hover, a.text-accent:focus {
 
 .onoffswitch-inner:after {
   content: "OFF";
-  background-color: #EEEEEE;
+  background-color: #EAF0ED;
   color: #999999;
   text-align: center;
 }

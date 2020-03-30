@@ -26,43 +26,34 @@
 
 <body>
     <!-- switch開關 -->
-    <div class="switches custom-switch">
-        <div class="onoffswitch">
-            <input
-                type="checkbox"
-                name="onoffswitch"
-                class="onoffswitch-checkbox"
-                id="myonoffswitch"
-            >
-            <label
-                class="onoffswitch-label sticky-top"
-                for="myonoffswitch"
-            >
-                <span class="onoffswitch-inner"></span>
-                <span class="onoffswitch-switch"></span>
-            </label>
-        </div>
-    </div>
-    <!-- <div
-        class="make-switch custom-control custom-switch"
-        id="mySwitch"
-    >
+    <div class="onoffswitch">
         <input
             type="checkbox"
-            class="custom-control-input"
-            id="customSwitch1"
+            name="onoffswitch"
+            class="onoffswitch-checkbox"
+            id="myonoffswitch"
         >
         <label
-            class="custom-control-label sticky-top"
-            for="customSwitch1"
-        ></label>
-    </div> -->
+            class="onoffswitch-label sticky-top"
+            for="myonoffswitch"
+        >
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
     <div class="container position-relative mt-2">
     <div class="row d-flex justify-content-center">
         <div class="col-10">
             <div class="card position-relative">
-                <div class="card-header">
+                <div class="card-header d-flex">
                     <h5 class="mb-0">About Me</h5>
+                    <div class="card__info d-flex ml-auto">
+                        <div class="info__email">
+                            <a href="mailTo:norriswu266@gmail.com">
+                                <i class="far fa-envelope" style="font-size:20px"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-body">
                     <p>
@@ -73,22 +64,18 @@
                         <a
                             href="https://hackmd.io/@4S7Z3PBFSCywTJcufIfm-Q"
                             target="_blank"
-                        >HackMD</a>
-                        撰寫了課程心得, 解題分析約20餘篇資訊, 底下是我的作品和曾經的工作經驗, 若是有興趣跟我聯繫,
-                        也可以透過左下角的聯繫資訊連繫我喔.
+                        >
+                        <strong>HackMD</strong></a>
+                        和
+                        <a
+                            href="https://fan630.github.io/"
+                            target="_blank"
+                        >
+                        <strong>Hexo</strong>
+                        </a>
+                        撰寫了課程心得, 底下是我的作品和曾經的工作經驗, 若是有興趣跟我聯繫,
+                        也可以透過聯繫方式連繫我喔.
                     </p>
-                    <!-- <div class="card__info d-flex">
-                            <div class="info__email">
-                                <a href="mailTo:norriswu266@gmail.com">
-                                    <i class="far fa-envelope"></i>
-                                </a>
-                            </div>
-                            <div class="info__phone ml-1">
-                                <a href="tel:0918012130">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </a>
-                            </div>
-                        </div> -->
                 </div>
             </div>
         </div>
@@ -145,24 +132,24 @@
                                     <a
                                         href="https://fan630.github.io/Blog_Redux_promise/#/"
                                         target="_blank"
-                                        class="btn btn-light"
+                                        class="btn btn-light js-btn-link"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/Blog_Redux_promise"
                                         target="_blank"
-                                        class="btn btn-primary-light"
+                                        class="btn btn-primary-light js-btn-demo"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                                 <div class="d-none d-md-block">
                                     <a
                                         href="https://fan630.github.io/Blog_Redux_promise/#/"
                                         target="_blank"
-                                        class="btn btn-secondary"
+                                        class="btn btn-light js-btn-link"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/Blog_Redux_promise"
                                         target="_blank"
-                                        class="btn btn-primary ml-2"
+                                        class="btn btn-primary-light js-btn-demo ml-2"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                             </div>
@@ -189,7 +176,7 @@
                             class="card-img img-fluid portfolioCard--active img-thumbnail"
                         >
                         <button
-                            class="btn btn-accent mt-2 btn-block d-block d-md-none js-btn"
+                            class="btn btn-primary-light mt-2 btn-block d-block d-md-none js-btn"
                             type="button"
                             data-toggle="collapse"
                             data-target="#collapseExample2"
@@ -230,24 +217,24 @@
                                     <a
                                         href="http://fan630.com.tw/todo/index.html"
                                         target="_blank"
-                                        class="btn btn-secondary"
+                                        class="btn btn-light js-btn-link"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/SPA_Todolist"
                                         target="_blank"
-                                        class="btn btn-primary"
+                                        class="btn btn-primary-light js-btn-demo"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                                 <div class="d-none d-md-block">
                                     <a
                                         href="http://fan630.com.tw/todo/index.html"
                                         target="_blank"
-                                        class="btn btn-secondary"
+                                        class="btn btn-light js-btn-link"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/SPA_Todolist"
                                         target="_blank"
-                                        class="btn btn-primary ml-2"
+                                        class="btn btn-primary-light js-btn-demo ml-2"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                             </div>
@@ -273,7 +260,7 @@
                             class="card-img img-fluid portfolioCard--active img-thumbnail"
                         >
                         <button
-                            class="btn btn-primary mt-2 btn-block d-block d-md-none js-btn"
+                            class="btn btn-primary-light mt-2 btn-block d-block d-md-none js-btn"
                             type="button"
                             data-toggle="collapse"
                             data-target="#collapseExample3"
@@ -309,24 +296,24 @@
                                     <a
                                         href="https://fan630.github.io/news/"
                                         target="_blank"
-                                        class="btn btn-secondary"
+                                        class="btn btn-light js-btn-link"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/news"
                                         target="_blank"
-                                        class="btn btn-primary"
+                                        class="btn btn-primary-light js-btn-demo"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                                 <div class="d-none d-md-block">
                                     <a
                                         href="https://fan630.github.io/news/"
                                         target="_blank"
-                                        class="btn btn-secondary"
+                                        class="btn btn-light js-btn-link"
                                     ><i class="icon fas fa-link md">Link</i></a>
                                     <a
                                         href="https://github.com/fan630/news"
                                         target="_blank"
-                                        class="btn btn-primary ml-2"
+                                        class="btn btn-primary-light js-btn-demo ml-2"
                                     ><i class="icon fab fa-github fa-md">Demo</i></a>
                                 </div>
                             </div>
