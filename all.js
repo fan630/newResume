@@ -10,12 +10,14 @@ $(document).ready(function () {
         $("body").toggleClass("bg-dark")
         $(".card-header").toggleClass("bg-primary")
         $(".card-header > h5").toggleClass("text-primary-light")
+        $(".card-header > .h6").toggleClass("text-primary-light")
         $(".js-btn").toggleClass("btn-primary-light")
         $(".js-btn").toggleClass("bg-primary")
         $(".js-btn-link").toggleClass("btn-light")
         $(".js-btn-link").toggleClass("btn-secondary")
         $(".js-btn-demo").toggleClass("btn-primary-light")
         $(".js-btn-demo").toggleClass("btn-primary")
+
     })
 });
 
