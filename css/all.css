@@ -5386,7 +5386,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
 }
 
@@ -5438,11 +5438,11 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: #EAF0ED;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
-  border-radius: -1px -1px 0 0;
+  border-radius: -2px -2px 0 0;
 }
 
 .card-header + .list-group .list-group-item:first-child {
@@ -5452,11 +5452,11 @@ input[type="button"].btn-block {
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: #EAF0ED;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 2px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 -1px -1px;
+  border-radius: 0 0 -2px -2px;
 }
 
 .card-header-tabs {
@@ -5490,14 +5490,14 @@ input[type="button"].btn-block {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: -1px;
-  border-top-right-radius: -1px;
+  border-top-left-radius: -2px;
+  border-top-right-radius: -2px;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: -1px;
-  border-bottom-left-radius: -1px;
+  border-bottom-right-radius: -2px;
+  border-bottom-left-radius: -2px;
 }
 
 .card-deck .card {
@@ -5612,7 +5612,7 @@ input[type="button"].btn-block {
 
 .accordion > .card > .card-header {
   border-radius: 0;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
 .breadcrumb {
