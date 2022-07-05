@@ -199,6 +199,14 @@ img {
   border-style: none;
 }
 
+.personal{
+  /* display:inline-block; */
+  width:12%; 
+  height:12%;
+  float:left;
+  margin-right:10px;
+}
+
 svg {
   overflow: hidden;
   vertical-align: middle;
