@@ -1,3 +1,9 @@
+    <style>
+    .achievement-item.active {
+        background-color: #e9ecef !important;
+        transition: background 0.2s;
+    }
+    </style>
 <!doctype html>
 <html lang="en">
 
@@ -64,7 +70,7 @@
                     >
 
                     <p class="mx-auto">
-                        我的名字是吳若凡, 擁有一年系統工程師經驗, 並考取AWS架構師助理證照(SAA-C02), 有充實的雲端知識並有實務操作經驗.對於Linux和Container不陌生. 多益795分.
+                        我的名字是吳若凡, 擁有三年系統工程師經驗, 並考取Azure架構師助理證照(SAA-C02), 有充實的雲端知識並有實務操作經驗, 多益795分.
                         <a
                             href="https://hackmd.io/@4S7Z3PBFSCywTJcufIfm-Q/BJ-vdXFV5"
                             target="_blank"
@@ -570,8 +576,79 @@
                         class="accordion"
                         id="accordionExample"
                     >
-                    
-                        <div class="d-flex align-items-center" data-toggle="collapse" data-target="#collapseOne">
+                        <div class="d-flex align-items-center" data-toggle="collapse" data-target="#collapseFour">
+                            <div class="h2 mb-0">
+                                <button
+                                    class="btn btn-link btn-block"
+                                    type="button"
+                                >
+                                    宏庭科技
+                                </button>
+                            </div>
+                            <div class="ml-auto">
+                                 <i class="far fa-caret-square-down" style="cursor:pointer"></i>
+                            </div>
+                        </div>
+                        <div
+                            id="collapseFour"
+                            class="collapse"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card">
+                                <div class="mb-2 card-header">
+                                    <div class="h6 d-flex mb-0">
+                                        <strong>2022/08~Now</strong>
+                                        <div class="ml-auto">雲端工程師</div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>透過Grafana排查日夜間緊急警報並即時處理.</li>
+                                        <li>協助開發人員進行上線前測試和問題排查.</li>
+                                        <li>新版本運行維護作業, 輔以SQL語法撰寫.</li>
+                                        <li>負責業務系統代碼bug的分析及解決.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" data-toggle="collapse" data-target="#collapseOne">
+                            <div
+                                class="card-header"
+                                id="headingThree"
+                            >
+                                <div class="h6 mb-0">
+                                    統智科技
+                                    <button
+                                        class="btn btn-link collapsed"
+                                        type="button"
+                                        aria-expanded="false"
+                                        aria-controls="collapseOne"
+                                    >
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                id="collapseOne"
+                                class="collapse"
+                                aria-labelledby="headingThree"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body">
+                                    <div class="d-flex mb-2">
+                                        <strong>2020/12~2022/02</strong>
+                                        <div class="ml-auto">系統工程師</div>
+                                    </div>
+                                    <ul>
+                                        <li>透過Grafana排查日夜間緊急警報並即時處理.</li>
+                                        <li>協助開發人員進行上線前測試和問題排查.</li>
+                                        <li>新版本運行維護作業, 輔以SQL語法撰寫.</li>
+                                        <li>負責業務系統代碼bug的分析及解決.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="d-flex align-items-center" data-toggle="collapse" data-target="#collapseOne">
                             <div class="h2 mb-0">
                                 <button
                                     class="btn btn-link btn-block"
@@ -606,7 +683,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div class="card" data-toggle="collapse" data-target="#collapseTwo">
                             <div
                                 class="card-header"
@@ -727,6 +804,68 @@
             </div>
         </div>
     </div>
+    <!-- 新增職缺成就 card，支援展開/收合 -->
+    <div class="row d-flex justify-content-center my-3">
+        <div class="col-10">
+            <div class="card">
+                <div class="card-header d-flex align-items-center">
+                    <h5 class="mb-0">職缺成就
+                        <i class="fas fa-trophy fa-lg"></i>
+                    </h5>
+                    <!-- <button
+                        class="btn btn-link ml-auto"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseAchievement"
+                        aria-expanded="false"
+                        aria-controls="collapseAchievement"
+                        style="font-size: 1.2rem;"
+                    >
+                        <i class="fas fa-caret-down"></i>
+                    </button> -->
+                </div>
+                <!--<div id="collapseAchievement" class="collapse">
+                    </div>-->
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="border rounded py-3 h-100 d-flex flex-column justify-content-center align-items-center achievement-item" data-achievement="cloud">
+                                    <i class="fas fa-cloud fa-2x mb-2 text-primary"></i>
+                                    <div>雲對雲系統搬遷</div>
+                                    <small class="text-muted">提升警報處理效率</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="border rounded py-3 h-100 d-flex flex-column justify-content-center align-items-center achievement-item" data-achievement="sql">
+                                    <i class="fas fa-database fa-2x mb-2 text-success"></i>
+                                    <div>內部專案-自動化流程</div>
+                                    <small class="text-muted">提高效率並降低人為錯誤</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="border rounded py-3 h-100 d-flex flex-column justify-content-center align-items-center achievement-item" data-achievement="team">
+                                    <i class="fas fa-users fa-2x mb-2 text-info"></i>
+                                    <div>獨立作業</div>
+                                    <small class="text-muted">完成多項專案上線</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="border rounded py-3 h-100 d-flex flex-column justify-content-center align-items-center achievement-item" data-achievement="share">
+                                    <i class="fas fa-chalkboard-teacher fa-2x mb-2 text-warning"></i>
+                                    <div></div>
+                                    <small class="text-muted">提升團隊雲端知識</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 成就描述區塊 -->
+                        <div id="achievement-desc" class="mt-3" style="display:none;">
+                            <div class="alert alert-info mb-0"></div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -739,5 +878,51 @@
         crossorigin="anonymous"
     ></script>
     <script src="./all.js"></script>
+    <script>
+    $(function() {
+        const descMap = {
+            cloud: [
+                "導入雲端監控系統，建立自動化警報通知流程。",
+                "即時掌握系統狀況，提升處理效率與穩定性。",
+                "跨部門協作，推動監控專案順利上線。"
+            ],
+            sql: [
+                "優化SQL查詢流程，重構資料庫索引與查詢語法。",
+                "資料處理時間減少30%，提升系統效能。",
+                "自動化資料處理，減少人為錯誤。"
+            ],
+            team: [
+                "跨部門協作，主導專案溝通與協調。",
+                "成功推動多項專案順利上線。",
+                "促進團隊合作與知識交流。"
+            ],
+            share: [
+                "主導技術分享會，定期舉辦雲端技術交流。",
+                "提升團隊整體雲端知識與實務能力。",
+                "推動團隊技術成長。"
+            ]
+        };
+        $('.achievement-item').on('click', function() {
+            // 反灰效果
+            $('.achievement-item').removeClass('active');
+            $(this).addClass('active');
+            // 顯示描述
+            const key = $(this).data('achievement');
+            const items = descMap[key] || [];
+            let html = '<ul class="mb-0">';
+            items.forEach(function(item) {
+                html += `<li>${item}</li>`;
+            });
+            html += '</ul>';
+            $('#achievement-desc .alert').html(html);
+            $('#achievement-desc').fadeIn();
+        });
+        // 點擊描述區塊隱藏
+        $('#achievement-desc').on('click', function() {
+            $(this).fadeOut();
+            $('.achievement-item').removeClass('active');
+        });
+    });
+    </script>
 </body>
 </html>
